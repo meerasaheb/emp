@@ -1,0 +1,10 @@
+<h1>EDIT EMPLOYEE DETAILS</h1>
+<div>
+<form action="/emps/<%=model.id%>" method='post'>
+employee name:<input type="text" name="name" value="<%= model.name%>"></br>
+employee email:<input type="text" name="email" value="<%= model.email%>"></br>
+employee salary:<input type="text" name="salary" value="<%= model.salary%>"></br>
+employee address:<input type="text" name="addres" value="<%= model.addres%>"></br>
+<input type="submit" name="sub">
+</form>
+</div>

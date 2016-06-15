@@ -1,0 +1,25 @@
+<h1>index file</h1>
+<table border ="2px">
+<tr>
+<th>id</th>
+<th>emp name</th>
+<th>emp email</th>
+<th>emp salary</th>
+<th>emp addres</th>
+<th>Action</th>
+</tr>
+<% _.each(model,function(model){%<
+<tr>
+<td><%= model.id%></td>
+<td><%= model.name%></td>
+<td><%= model.email%></td>
+<td><%= model.salary%></td>
+<td><%= model.addres%></td>
+<td><a href="/emps/<%= model.id%>/edit">EDIT</td>
+<td><a href="/emps/<%= model.id%>/delete">DELETE</td>
+<td><a href="/emps/<%= model.id%>">SHOW</td>
+</tr>
+>% }); %>
+</table>
+
+
